@@ -7,41 +7,73 @@
     <link rel="icon" type="image/png" href="./Resources/Images/favicon.png">
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <table>
-            <tr>
-                <!-- Logo -->
-                <td>
-                    <img src="./Resources/Images/emkehu_logo.png" style="width: 150px; height: auto; max-height: 600px;" />
-                </td>
-                <!-- Space -->
-                <td width="10"></td>
-                <!-- Menu -->
-                <td><a href="index.html">Home</a></td>
-                <td width="10"></td>
-                <td>
-                    <u>Categories</u><br>
-                    <a href="mobile-devicesList.html">Mobile Devices</a><br>
-                    <br />
-                    <a href="kitchen-appliancesList.html">Kitchen Appliances</a>
-                </td>
-                <td width="10"></td>
-                <td><a href="about.html">About</a></td>
-                <td width="10"></td>
-                <td><a href="#">Checkout</a></td>
-                <td width="10"></td>
-                <td><a href="login.html">Login</a></td>
-                <td width="10"></td>
-                <td><a href="registration.html">Register</a></td>
-            </tr>
-        </table>
-        <hr />
+        <div style="background-color:aliceblue;">
+            <!--LOGO-->
+            <img src="./Resources/Images/emkehu_logo.png" style="width: 12%; height: auto; max-height: 600px; padding-left: 44%; padding-right:44%;" />
+            <!-- Navigation -->
+            <nav style="padding-left: 44%;">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <strong>Categories</strong>
+                        <ul>
+                            <li><a href="mobile-devicesList.html">Mobile Devices</a></li>
+                            <li><a href="kitchen-appliancesList.html">Kitchen Appliances</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Checkout</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="registration.html">Register</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <hr />
+        </div>
     </header>
     <main>
-        <h1></h1>
+        <section style="height:450px;">
+            <h1 style="font-family: Arial, Helvetica, sans-serif">Welcome to EMKEHU Electronics Online Shop</h1>
+            <section class="slide-ads">
+                <h2>Featured Promotions</h2>
+                <!-- Placeholder Image Area for Ads-->
+                <img src="./Resources/Images/ad_banner.png" style="width: 100%; height:350px;" />
+            </section>
+        </section>
+        <br />
+        <section style="border:dotted;">
+            <h2 style="padding-left:44%; width:56%; margin-top:4px; background-color:azure; margin-bottom:-5px;">Best Sellers</h2>
+            <div style="width: 20%; height: 280px; padding-left:10px;
+                 margin-bottom:7px; margin-top:10px;">
+                <div class="best-sell-product" style="border:double; height:280px;
+                    padding-left:1%;">
+                    <p class="product-title" style="padding-left:36.5%;"><b>Title 1</b></p>
+                    <img src="#" style="width:98%; height:200px; padding-left:1%;" />
+                    <p class="product-price" style="padding:4px 0 0 40%; margin-top:0px;">100$</p>
+                </div>
+            </div>
+        </section>
+        <br />
+        <section style="border:dotted;">
+            <h2 style="padding-left:44%; width:56%; margin-top:4px; background-color:orangered; margin-bottom:-5px;">ON SALE!</h2>
+            <div style="width: 20%; height: 280px; padding-left:10px;
+         margin-bottom:7px; margin-top:10px;">
+                <div class="best-sell-product" style="border:double; height:280px;
+            padding-left:1%;">
+                    <p class="product-title" style="padding-left:36.5%;"><b>Title 1</b></p>
+                    <img src="#" style="width:98%; height:200px; padding-left:1%;" />
+                    <p class="product-price" style="padding:4px 0 0 40%; margin-top:0px;">25$</p>
+                </div>
+            </div>
+        </section>
     </main>
+    <hr style="border-style:groove;" />
     <footer>
-
+        <div style="background-color: black; color: white;">
+            <b>Copyright&copy; EMKEHU Electronics LTD. All rights reserved.</b>
+            <p><u><em>Contact:</em></u> helpdesk@emkehu.de</p>
+        </div>
     </footer>
 </body>
 </html>
