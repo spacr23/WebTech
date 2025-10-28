@@ -6,6 +6,81 @@
     <title></title>
 </head>
 <body>
+    <!-- Header -->
+    <header>
+        <div>
+            <!--LOGO-->
+            <img src="./Resources/Images/emkehu_logo.png" width="200" height="200" />
+            <!-- Navigation -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <strong>Categories</strong>
+                        <ul>
+                            <li><a href="mobile-devicesList.html">Mobile Devices</a></li>
+                            <li><a href="kitchen-appliancesList.html">Kitchen Appliances</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Checkout</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="registration.html">Register</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <hr />
+        </div>
+    </header>
+    <main>
+        <h1>REGISTRATION</h1>
+        <form>
+            <p>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name">
+            </p>
+            <p>
+                <label for="surname">Surname:</label><br>
+                <input type="text" id="surname" name="surname">
+            </p>
+            <p>
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username">
+            </p>
 
+            <p>
+                <label for="email">E-mail:</label><br>
+                <input type="text" id="email" name="email">
+            </p>
+
+            <p>
+                <label for="gender">Gender:</label><br>
+                <input type="radio" id="gender" name="gender" value="Male">Male
+                <input type="radio" id="gender" name="gender" value="Female">Female
+            </p>
+
+            <p>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password">
+                <input type="checkbox" onclick="myFunction()">Show Password
+            </p>
+
+            <p>
+                <input type="checkbox" onclick="myFunction()">I've accepted <a href="#">Terms & Conditions</a>.
+            </p>
+
+            <p>
+                <input type="submit" value="Register" />
+            </p>
+        </form>
+
+        <p><a href="index.html">Back to Home</a></p>
+    </main>
+    <footer>
+        <hr />
+        <div>
+            <b>Copyright&copy; EMKEHU Electronics LTD. All rights reserved.</b>
+            <p><u><em>Contact:</em></u> helpdesk@emkehu.de</p>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,28 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Login page</title>
+    <title>Login page</title>
 </head>
 <body>
-  <h1>Login page</h1>
-    <form>
-    <p>
-      <label for="username">Username:</label><br>
-      <input type="text" id="username" name="username">
-    </p>
+    <!-- Header -->
+    <header>
+        <div>
+            <!--LOGO-->
+            <img src="./Resources/Images/emkehu_logo.png" width="200" height="200" />
+            <!-- Navigation -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <strong>Categories</strong>
+                        <ul>
+                            <li><a href="mobile-devicesList.html">Mobile Devices</a></li>
+                            <li><a href="kitchen-appliancesList.html">Kitchen Appliances</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Checkout</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="registration.html">Register</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <hr />
+        </div>
+    </header>
+    <main>
+        <h1>Login page</h1>
+        <form>
+            <p>
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username">
+            </p>
 
-    <p>
-      <label for="password">Password:</label><br>
-      <input type="password" id="password" name="password">
-      <input type="checkbox" onclick="myFunction()">Show Password
-    </p>
+            <p>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password">
+                <input type="checkbox" onclick="myFunction()">Show Password
+            </p>
 
-    <p>
-      <input type="submit" value="Login">
-      <input type="button" value="Register" onclick="window.location.href='registration.html'">
-    </p>
-  </form>
+            <p>
+                <input type="submit" value="Login">
+                <input type="button" value="Register" onclick="window.location.href='registration.html'">
+            </p>
+        </form>
 
-  <p><a href="index.html">Back to Home</a></p>
+        <p><a href="index.html">Back to Home</a></p>
+    </main>
+    <footer>
+        <hr />
+        <div>
+            <b>Copyright&copy; EMKEHU Electronics LTD. All rights reserved.</b>
+            <p><u><em>Contact:</em></u> helpdesk@emkehu.de</p>
+        </div>
+    </footer>
 </body>
 </html>
