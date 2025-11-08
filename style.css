@@ -1,31 +1,106 @@
-header {
-    background-color: lightgrey;
-}
-
+/* Change the font-family to the one of your choice and the font-size to 12. */
 body {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  text-align: center; /* Center the content. */
   background-color: beige;
 }
-
-h1 {
-  color: black;
-  text-align: center;
-  font-family: Arial;
-  font-size: 12px;
+/* Changing header color and text color */
+header {
+  background-color: #000F24;
+  text-color: white;
 }
 
-h2  {
-  color: black;
-  text-align: left;
-  font-family: Arial;
-  font-size: 12px;
-}
-
+/* Change paragraphs to justify using text-align to right. */
 p {
-  font-family: Arial;
-  font-size: 12px;
+  text-align: right;
 }
 
-footer {
-  font-family: Arial;
-  font-size: 12px;
+/* Change the background-color of table headers to light gray. */
+th {
+  background-color: lightgray;
+}
+
+/* Making images a block and align it left */
+img {
+  display: block;
+  margin-left: auto;
+  margin-left: 0;
+}
+
+/* Realize different styles for the links in the document. */
+a {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+/* Additionally change the style of the links when the mouse is placed over the link. */
+a:hover {
+  color: red;
+  text-decoration: underline;
+  transition: color 1.5s;
+}
+
+/* Main nav items in a row and make dropdown menu*/
+nav > ul > li {
+  display: inline-block;
+  position: relative;
+  margin: 0 15px;
+}
+
+/* Changes to links and the Categories label */
+nav a, nav strong {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  display: inline-block;
+}
+
+/* Dropdown (hidden by default) */
+nav ul ul {
+  display: none;
+  position: absolute;
+  background-color: #000F24;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  top: 100%;
+  left: 0;
+  border-radius: 5px;
+}
+
+/* Dropdown items */
+nav ul ul li {
+  display: block;
+  margin: 0;
+}
+
+/* Show dropdown on hover */
+nav ul li:hover > ul {
+  display: block;
+}
+
+/* Configure the form fields and change their appearance. Frames and spacing should be changed. A uniform font-face is also required. */
+input[type=text],
+input[type=email],
+input[type=password],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
