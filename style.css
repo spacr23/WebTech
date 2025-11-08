@@ -84,6 +84,7 @@ nav ul li:hover > ul {
 /* Configure the form fields and change their appearance. Frames and spacing should be changed. A uniform font-face is also required. */
 input[type=text],
 input[type=email],
+input[type=username],
 input[type=password],
 textarea,
 select {
