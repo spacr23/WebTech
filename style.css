@@ -1,0 +1,31 @@
+header {
+    background-color: lightgrey;
+}
+
+body {
+  background-color: beige;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+  font-family: Arial;
+  font-size: 12px;
+}
+
+h2  {
+  color: black;
+  text-align: left;
+  font-family: Arial;
+  font-size: 12px;
+}
+
+p {
+  font-family: Arial;
+  font-size: 12px;
+}
+
+footer {
+  font-family: Arial;
+  font-size: 12px;
+}
