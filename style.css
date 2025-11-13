@@ -126,6 +126,7 @@ textarea:focus,
 select:focus {
   outline: 2px solid #000F24;
   border-color: #000F24;
+  background-color: #EEE;
 }
 
 /* Fieldset and legend used as visual frames for grouped fields */
