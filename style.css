@@ -91,6 +91,13 @@ form {
   padding: 16px;
 }
 
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+}
+
 /* Uniform typography for all form elements */
 input, select, textarea, button, label {
   font-family: inherit;
