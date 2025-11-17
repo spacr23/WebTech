@@ -77,7 +77,6 @@ nav ul ul li {
   margin: 5px 0;
 }
 
-
 /* Show dropdown on hover */
 nav ul li:hover > ul {
   display: block;
@@ -271,5 +270,3 @@ main {
 .table-wrapper::-webkit-scrollbar-track {
   background-color: #eee;
 }
-
-
