@@ -67,7 +67,6 @@ function applyDiscount(price, discountPercent) {
      lastPrice =  priceDiscoutTax; //update the last price
 }
 
-
 // Task 4 - Function 3: Convert price to USD
 function convertToUSD(price) {
     // Check if input is empty
@@ -80,4 +79,54 @@ function convertToUSD(price) {
 
     document.getElementById("usdResult").innerHTML =
         "&euro;  " + lastPrice.toFixed(2) + " = &dollar; " + priceUSD.toFixed(2);
+}
+
+// ===== Task 3 - Collection List =====
+
+let collectionItems = []; // stores selected items
+
+function addToCollection(productName, quantity) {
+    quantity = parseInt(quantity);
+
+    // check quantity
+    if (isNaN(quantity) || quantity <= 0) {
+        document.getElementById("collectionList").innerHTML =
+            "<span style='color:red;'>Please insert a valid quantity.</span>";
+        return;
+    }
+
+    // add item to array (simple version, no merge)
+    collectionItems.push({
+        name: productName,
+        qty: quantity
+    });
+
+    // update the HTML view
+    showCollectionList();
+}
+
+function showCollectionList() {
+    let container = document.getElementById("collectionList");
+
+    if (collectionItems.length === 0) {
+        container.innerHTML = "No items selected yet.";
+        return;
+    }
+
+    let html = "<ul>";
+    for (let i = 0; i < collectionItems.length; i++) {
+        html += "<li>" + collectionItems[i].name +
+                " – Quantity: " + collectionItems[i].qty + "</li>";
+    }
+    html += "</ul>";
+
+    container.innerHTML = html;
+}
+
+function clearCollectionList() {
+    // empty the array
+    collectionItems = [];
+
+    // update the view
+    document.getElementById("collectionList").innerHTML = "No items selected yet.";
 }

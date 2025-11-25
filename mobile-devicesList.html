@@ -41,7 +41,14 @@
                 Price: €899.00<br>
                 <em>High-performance smartphone with edge-to-edge display and all-day battery life.</em><br>
                 <a href="pulsex.html">View details</a>
+                <label style="display: block; width: 50%; margin: 0 auto; text-align: center;">Quantity:
+                <input type="number" id="qty-phone" value="1" min="1">
+                </label>
+                <button onclick="addToCollection('EMKEHU Pulse X', document.getElementById('qty-phone').value)">
+                    Add to collection list
+                </button>
             </li>
+    
         </ul>
 
         <h2>Tablets</h2>
@@ -51,16 +58,29 @@
                 Price: €1399<br>
                 <em>Ultra-thin tablet designed for work, streaming, and creativity on the go.</em><br>
                 <a href="slatepro.html">View details</a>
+                <label style=" display: block; width: 50%; margin: 0 auto; text-align: center;">Quantity:
+                <input type="number" id="qty-tablet" value="1" min="1">
+                </label>
+                <button onclick="addToCollection('EMKEHU Slate Pro', document.getElementById('qty-tablet').value)">
+                Add to collection list
+                </button>
             </li>
         </ul>
-
+        <h2>Collection list</h2>
+        <div id="collectionList">
+         No items selected yet.
+        </div>
+        <button onclick="clearCollectionList()">Clear collection list</button><br><br>
         <a href="index.html">Back to homepage</a>
+        
+
+
+<script src="script.js"></script>
     </main>
     <footer>
         <div>
             <b>Copyright&copy; EMKEHU Electronics LTD. All rights reserved.</b>
             <p><u><em>Contact:</em></u> helpdesk@emkehu.de</p>
-            <button id="modeToggleBtn" onclick="toggleDarkMode()">Toggle dark mode</button>
         </div>
     </footer>
     <script src="script.js"></script>
