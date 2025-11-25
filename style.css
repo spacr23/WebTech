@@ -1,3 +1,9 @@
+/* Dark mode using javascript (2). */
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
 /* Change the font-family to the one of your choice and the font-size to 12. */
 body {
   font-family: Arial, sans-serif;
