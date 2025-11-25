@@ -8,7 +8,7 @@ function toggleDarkMode() {
         localStorage.setItem("darkMode", "enabled");
         btn.textContent = "Toggle light mode";
         } else {
-            ocalStorage.setItem("darkMode", "disabled");
+            localStorage.setItem("darkMode", "disabled");
             btn.textContent = "Toggle dark mode";
                }
 }
