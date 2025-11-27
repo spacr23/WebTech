@@ -1,3 +1,131 @@
+// TASK 1 - CHECK FORM INPUTS
+var usernameCheck = false;
+var passwordCheck = false;
+var errorMessage = "";
+
+document.querySelectorAll("input").forEach(input => {
+    input.addEventListener("blur", checkForm);
+});
+
+function checkForm(){
+    let errorBox = document.getElementsByClassName("error-msg")[0];
+    let submitBtn = document.querySelector("input[type=submit]");
+    
+    let usernameEl = document.getElementsByName("username")[0];
+    let passwordEl = document.getElementsByName("password")[0];
+    let confirmEl = document.getElementsByName("confirmPassword")[0]; 
+    let usernameNewEl = document.getElementsByName("username_new")[0];
+    let passwordNewEl = document.getElementsByName("password_new")[0];
+        
+    errorMessage = "";
+
+    if(confirmEl){  
+        // REGISTRATION PAGE
+        checkUsername(usernameEl.value);
+        checkPassword(passwordEl.value, confirmEl.value);
+    }
+    else if(usernameNewEl && passwordNewEl){
+        // CUSTOMER PAGE
+        checkUsername(usernameNewEl.value);
+        checkPassword(passwordNewEl.value, passwordNewEl.value); 
+    }
+    else if(usernameEl && passwordEl){
+        // LOGIN PAGE
+        if((usernameEl.value.trim() == "") || (passwordEl.value.trim() == "")){
+            usernameCheck = false;
+            passwordCheck = false;
+            errorMessage += "Username or password can't be empty."
+        }else{
+            usernameCheck = true;
+            passwordCheck = true;
+        }
+    }
+    
+    if (usernameCheck && passwordCheck){
+        errorBox.classList.remove("display");
+        submitBtn.classList.remove("disabled-btn"); 
+    }else{
+        errorBox.innerHTML = errorMessage;
+        errorBox.classList.add("display");
+        submitBtn.classList.add("disabled-btn");
+    }
+
+    styleInputFields();
+}
+
+function styleInputFields(){
+    let inputFields = document.querySelectorAll("input");
+
+    for(inputField of inputFields){
+        let label = inputField.previousElementSibling;
+
+        if(document.title !== "Customer Information"){
+            styleInputArea(inputField, "username", "password", label);
+        }else{
+            styleInputArea(inputField, "username_new", "password_new", label);
+        }   
+    }
+}
+
+function styleInputArea(inputField, var_user, var_pass, label){
+    if(inputField.name === var_user){
+            if(usernameCheck){
+                inputField.style.borderColor = "green";
+                label.style.color = "green";
+            } else {
+                inputField.style.borderColor = "red";
+                label.style.color = "red";
+            }
+    }else if(inputField.name === var_pass || inputField.name === "confirmPassword"){
+        if(passwordCheck){
+            inputField.style.borderColor = "green";
+            label.style.color = "green";
+        } else {
+            inputField.style.borderColor = "red";
+            label.style.color = "red";
+        }
+    }else {
+        if(inputField.value.trim() !== ""){
+            inputField.style.borderColor = "green";
+            label.style.color = "green";
+        } else {
+            inputField.style.borderColor = "red";
+            label.style.color = "red";
+        }
+    }
+}
+
+function checkUsername(username){
+    if(username.length >= 5){
+        const hasUpper = username.toLowerCase() !== username;
+        const hasLower = username.toUpperCase() !== username;
+        if (hasUpper && hasLower){
+            usernameCheck = true;
+        }else{
+            usernameCheck = false;
+            errorMessage += "Username must contain at least one uppercase and one lowercase letter.\n";
+        }
+    }else{
+        usernameCheck = false;
+        errorMessage += "Username should consist at least of 5 characters."
+    }
+}
+
+function checkPassword(password, passwordRep){
+    if(password.length >= 10){
+        if(password == passwordRep){
+            passwordCheck = true;
+        }else{
+            passwordCheck = false;
+            errorMessage += "The password repetition must correspond to the password";
+        }
+    }else{
+        passwordCheck = false;
+        errorMessage += "Password must have at least 10 characters."
+    }
+}
+
+
 // Task 2 - Toggling dark mode and saving it to storage - with button change so it doesn't need to reload
 function toggleDarkMode() {
     var element = document.body;

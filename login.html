@@ -33,6 +33,7 @@
     <main>
         <h1>Login page</h1>
         <form>
+            <div class="error-msg">XXXXXXXX</div>
             <p>
                 <label for="username">Username:</label><br>
                 <input type="text" id="username" name="username">
@@ -45,7 +46,7 @@
             </p>
 
             <p>
-                <input type="submit" value="Login">
+                <input type="submit" value="Login" class="disabled-btn">
                 <input type="button" value="Register" onclick="window.location.href='registration.html'">
             </p>
         </form>

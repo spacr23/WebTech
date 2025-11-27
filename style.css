@@ -162,7 +162,7 @@ input[type="submit"] {
   border: 1px solid #000F24;
   border-radius: 6px;
   background: #000F24;
-  color: #fff;
+  color: green;
   cursor: pointer;
 }
 /* Button hover effect */
@@ -276,3 +276,27 @@ main {
 .table-wrapper::-webkit-scrollbar-track {
   background-color: #eee;
 }
+
+/* STYLING FOR JS */
+.error-msg {
+  display: none;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 2%;
+  width: auto;
+  background-color: orangered;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.error-msg.display {
+  display: block;
+}
+
+input[type=submit].disabled-btn {
+  background-color: gray !important;
+  color: red !important;
+  cursor:not-allowed !important;
+  pointer-events:none !important;
+}
+

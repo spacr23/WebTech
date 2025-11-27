@@ -33,7 +33,7 @@
     <main>
         <h1>Customer Information</h1>
 
-        <form>
+        <form id="updateForm">
             <label>Username:</label>
             <input type="text" name="username" value="Hugo" style="margin-right:20px;">
 
@@ -44,14 +44,15 @@
         </form>
 
         <form>
+            <div class="error-msg">XXXXXXXX</div>
             <label>New Username:</label>
-            <input type="text" name="username" value="Hugo2" style="margin-right:20px;">
+            <input type="text" name="username_new" value="Hugo2" style="margin-right:20px;">
 
             <label>New Password:</label>
-            <input type="password" name="password" value="Example2">
+            <input type="password" name="password_new" value="Example2">
 
             <br><br>
-            <input type="submit" value="Save Changes">
+            <input type="submit" value="Save Changes" class="disabled-btn">
             <input type="reset" value="Cancel">
         </form>
 
