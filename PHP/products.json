@@ -1,0 +1,49 @@
+{
+  "products": [
+    {
+      "pid": 1,
+      "name": "EMKEHU Pulse X",
+      "description": "6.1\" display, 128 GB storage, dual camera.",
+      "imagepath": "./images/pulseX.jpg",
+      "category": "mobile-devices",
+      "subcategory": "smartphones",
+      "price": 899.00
+    },
+    {
+      "pid": 2,
+      "name": "EMKEHU Slate Pro",
+      "description": "11\" tablet for study and entertainment.",
+      "imagepath": "./images/slatePro.jpg",
+      "category": "mobile-devices",
+      "subcategory": "tablets",
+      "price": 1399.00
+    },
+    {
+      "pid": 3,
+      "name": "EMKEHU HotPress 700",
+      "description": "Compact sandwich maker with non-stick plates.",
+      "imagepath": "./images/hotpress_700.jpg",
+      "category": "kitchen-appliances",
+      "subcategory": "sandwich maker",
+      "price": 59.90
+    },
+    {
+      "pid": 4,
+      "name": "EMKEHU CoolBox 300L",
+      "description": "Energy efficient refrigerator (300 L).",
+      "imagepath": "./images/coolbox_300l.jpg",
+      "category": "kitchen-appliances",
+      "subcategory": "refrigerator",
+      "price": 899.00
+    },
+    {
+      "pid": 5,
+      "name": "EMKEHU SteelPan 28",
+      "description": "28 cm stainless steel frying pan, induction ready.",
+      "imagepath": "./images/steelpan_28.jpg",
+      "category": "kitchen-appliances",
+      "subcategory": "frying pan",
+      "price": 49.90
+    }
+  ]
+}
