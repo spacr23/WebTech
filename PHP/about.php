@@ -6,7 +6,9 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
+    <?php
+    $aboutTitle = "About Us";
+    ?>
     <header>
         <div>
             <!--LOGO-->
@@ -32,7 +34,7 @@
     </header>
     <hr />
     <main>
-        <h1>About Us</h1>
+        <h1><?= $aboutTitle ?></h1>
         <div class="container">
         <p><strong>Shop name:</strong> EMKEHU Electronics</p>
         <p><strong>Owner:</strong> Emanuele Colì - Kerem Özakça - Hugo Rosier</p>

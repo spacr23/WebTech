@@ -8,7 +8,9 @@
     <link rel="icon" type="image/png" href="./Resources/Images/favicon.png">
 </head>
 <body>
-    <!-- Header -->
+    <? php
+    $textTitle = "Welcome to EMKEHU Electronics Online Shop";
+    ?>
     <header>
         <div>
             <!--LOGO-->
@@ -34,7 +36,7 @@
     </header>
     <hr />
     <main>
-        <h1>Welcome to EMKEHU Electronics Online Shop</h1>
+        <h1><?= $textTitle ?></h1>
         <section>
             <table class="slide-ads">
                 <thead>
