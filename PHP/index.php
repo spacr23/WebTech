@@ -24,6 +24,7 @@
                         <ul>
                             <li><a href="mobile-devicesList.php">Mobile Devices</a></li>
                             <li><a href="kitchen-appliancesList.php">Kitchen Appliances</a></li>
+                            <li><a href="products.php"> Products</a></li>
                         </ul>
                     </li>
                     <li><a href="shoppingCart.php">Checkout</a></li>
