@@ -14,18 +14,18 @@
             <!-- Navigation -->
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.php">Home</a></li>
                     <li>
                         <strong>Categories</strong>
                         <ul>
-                            <li><a href="mobile-devicesList.html">Mobile Devices</a></li>
-                            <li><a href="kitchen-appliancesList.html">Kitchen Appliances</a></li>
+                            <li><a href="mobile-devicesList.php">Mobile Devices</a></li>
+                            <li><a href="kitchen-appliancesList.php">Kitchen Appliances</a></li>
                         </ul>
                     </li>
-                    <li><a href="shoppingCart.html">Checkout</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="registration.html">Register</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="shoppingCart.php">Checkout</a></li>
+                    <li><a href="login.php">Login</a></li>
+                    <li><a href="registration.php">Register</a></li>
+                    <li><a href="about.php">About</a></li>
                 </ul>
             </nav>
         </div>
@@ -39,7 +39,7 @@
         <p><strong>Address:</strong> Esplanade 10, 85049 Ingolstadt, Germany</p>
         <p><strong>Phone:</strong> +49 841 123456</p>
         <p><strong>Email:</strong> info@emkehu.de</p>
-        <a href="index.html">Back to homepage</a>
+        <a href="index.php">Back to homepage</a>
             </div>
     </main>
     <footer>

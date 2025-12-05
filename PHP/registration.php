@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div>
+            <!--LOGO-->
+            <img src="./Resources/Images/emkehu_logo.png" class="logo" />
+            <!-- Navigation -->
+            <nav>
+                <ul>
+                    <li><a href="index.php">Home</a></li>
+                    <li>
+                        <strong>Categories</strong>
+                        <ul>
+                            <li><a href="mobile-devicesList.php">Mobile Devices</a></li>
+                            <li><a href="kitchen-appliancesList.php">Kitchen Appliances</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="shoppingCart.php">Checkout</a></li>
+                    <li><a href="login.php">Login</a></li>
+                    <li><a href="registration.php">Register</a></li>
+                    <li><a href="about.php">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <hr />
+    <main>
+        <h1>REGISTRATION</h1>
+        <form>
+            <div class="error-msg">XXXXXXXX</div>
+            <p>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required>
+            </p>
+            <p>
+                <label for="surname">Surname:</label><br>
+                <input type="text" id="surname" name="surname" required>
+            </p>
+            <p>
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username" required>
+            </p>
+
+            <p>
+                <label for="email">E-mail:</label><br>
+                <input type="text" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="gender">Gender:</label><br>
+                <input type="radio" id="gender" name="gender" value="Male" required>Male
+                <input type="radio" id="gender" name="gender" value="Female">Female
+            </p>
+
+            <p>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required>
+                <input type="checkbox" onclick="myFunction()">Show Password
+            </p>
+
+            <p>
+                <label for="confirmPassword">Repeat Password:</label><br>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </p>
+
+            <p>
+                <input type="checkbox" onclick="myFunction()" required>I've accepted <a href="#">Terms & Conditions</a>.
+            </p>
+
+            <p>
+                <input type="submit" value="Register" class="disabled-btn"/>
+            </p>
+        </form>
+
+        <p><a href="index.php">Back to Home</a></p>
+    </main>
+    <footer>
+        <div>
+            <b>Copyright&copy; EMKEHU Electronics LTD. All rights reserved.</b>
+            <p><u><em>Contact:</em></u> helpdesk@emkehu.de</p>
+            <button id="modeToggleBtn" onclick="toggleDarkMode()">Toggle dark mode</button>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
